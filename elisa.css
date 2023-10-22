@@ -1,0 +1,280 @@
+/* Estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+body {
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    background-color: #D8DCAC;
+    font-family: 'Quicksand', sans-serif;
+
+}
+h1 {
+    color: #DC843C;
+}
+.logo-top {
+    display: flex;
+    justify-content: center;
+}
+.logo-img {
+    width: 250px; 
+    margin: 30px 0px 8px;
+}
+.menu-button {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+}
+
+#navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #D8DCAC;
+    position: absolute;
+    top: 70px; 
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#navbar-menu li {
+    padding: 10px 0;
+}
+@media screen and (min-width: 768px) {
+
+    .menu-button {
+        display: none;
+    }
+
+    #navbar-menu {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        top: auto;
+    }
+
+    #navbar-menu li {
+        display: inline;
+        padding: 0 15px;
+    }
+}
+
+.menu-button {
+    display: none; /* Inicialmente oculto em telas maiores */
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+}
+
+#navbar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar-menu li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar {
+    background-color: #D8DCAC;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    padding: 20px 30px;
+}
+
+.navbar-left ul {
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+
+}
+.navbar-left a {
+    height: 30%;
+    margin-right: 35px;
+    text-decoration: none;
+    color: #555; /* Cor dos links */
+    font-weight: bold;
+}
+.navbar-right {
+    align-content: flex-end;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.navbar-svg {
+    margin-right: 25px;
+    text-decoration: none;
+    color: #555; /* Cor dos ícones de redes sociais */
+}
+
+.parallax { 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.title-1 {
+    font-family: 'Quicksand', sans-serif;
+    font: 1em sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.subtitle-1 {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 4px;
+    color: #fff;
+    font-size: 1.5rem; 
+}
+#sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #DC843C;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.5rem;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    margin-left: 50px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adicionando sombra para efeito de flutuação */
+}
+
+.background-gray {
+    border-top: 12px #333;
+    background-color: #D8DCAC;
+    color: #555;
+    text-align: center;
+    text-shadow: #333;
+    text-size-adjust: 72px;
+    padding: 40px 0;
+    min-height: auto;
+    max-height: max-content;
+    font-size: 2rem;
+}
+.background-gray-two {
+    border-top: 12px #333;
+    background-color: #7C8C64;
+    color: #D8DCAC;
+    text-align: right;
+    text-shadow: #333;
+    text-size-adjust: 72px;
+    padding: 40px 0;
+    min-height: auto;
+    max-height: max-content;
+    font-size: 2rem;
+}
+.background-gray-two h1 {
+    color: white;
+}
+/* Estilos para conteúdo */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+/* Estilos para a logo */
+.rounded-logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.testimonial, .consultation-plan {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #DC843C;
+}
+
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+
+    background-color: #555;
+    text-align: center;
+    padding: 20px 50px;
+    color: white;
+}
+
+.footer-svg {
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 30px; 
+    height: 30px; 
+    margin: 8px;
+}
