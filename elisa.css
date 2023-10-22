@@ -4,6 +4,7 @@ body {
     margin: auto;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     padding: 0;
+    font-size: 12px; 
     background-color: #D8DCAC;
     font-family: 'Quicksand', sans-serif;
 
@@ -16,11 +17,12 @@ h1 {
     justify-content: center;
 }
 .logo-img {
-    width: 250px; 
-    margin: 30px 0px 8px;
+    width: 100%; 
+    max-width: 250px; 
+    margin: 10px 0 8px;
 }
 .menu-button {
-    display: none; 
+    display: block; 
     font-size: 24px;
     cursor: pointer;
     background: none;
@@ -47,6 +49,10 @@ h1 {
     padding: 10px 0;
 }
 @media screen and (min-width: 768px) {
+        body {
+            font-size: 18px; 
+        }
+    
 
     .menu-button {
         display: none;
@@ -67,7 +73,7 @@ h1 {
 }
 
 .menu-button {
-    display: none; /* Inicialmente oculto em telas maiores */
+    display: none;
     font-size: 24px;
     cursor: pointer;
     background: none;
@@ -188,11 +194,11 @@ h1 {
 
 .about-image img {
     max-width: 100%;
-    margin-left: 50px;
-    height: 400px;
+    margin: 0; 
+    height: auto; 
     width: 400px;
     border-radius: 50%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adicionando sombra para efeito de flutuação */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .background-gray {
@@ -244,6 +250,8 @@ h1 {
 }
 
 .cta-button {
+    width: 100%;
+    margin: 10px 0; 
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
