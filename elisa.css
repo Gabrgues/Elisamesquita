@@ -4,14 +4,16 @@
 body{
     margin: auto;
     padding: 0;
-    background-color: #D8DCAC;
+    background-color: whitesmoke;
     font-family: 'PlayPen Sans';
 }
 
 span{
     color: #D8DCAC;
 }
-
+h1{
+    color: #4C543C;
+}
 .logo-top{
     display: flex;
     justify-content: center;
@@ -21,6 +23,58 @@ span{
     max-width: 250px; 
     margin: 10px 0 8px;
 }
+.menu-button {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-left {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    #navbar-menu {
+        background-color: #fff;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+
+    #navbar-menu.show {
+        display: flex;
+    }
+
+    #navbar-menu li {
+        margin: 5px 0;
+    }
+
+    .about-text p, h1{
+        text-align: center;
+    }
+    .cta-button{
+       text-align: center;
+    }
+}
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -64,7 +118,7 @@ ul li a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 63vh;
+    height: 80vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -104,7 +158,7 @@ ul li a{
 .about-text{
     flex: 1;
     padding: 0 20px;
-    text-align: left;
+    text-align: right;
     font-size: 2rem;
 }
 
@@ -131,7 +185,15 @@ ul li a{
     border-radius: 50%;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
-
+.beautiful-text{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DC843C;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 35px;
+    padding: 30px 50px 30px;
+}
 .background-gray {
     border-top: 12px #333;
     color: #4C543C;
@@ -168,10 +230,11 @@ ul li a{
 }
 
 .content-box {
+    border-radius: 5px;
     text-align: left;
     font-size: 18px;
     color: #4C543C;
-    background-color:rgba(255, 255, 255, 0.1);
+    background-color:#D8DCAC;
     width: 500px;
     height: auto;
     padding: 10px;
@@ -199,10 +262,11 @@ ul li a{
 
 .testimonial-box {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
     width: 300px;
+    background-color: #4C543C;
     height: auto;
-    color: #7C8C64;
+    color: #fff;
     text-align: center;
     padding: 20px;
     margin: 10px;
@@ -230,7 +294,7 @@ ul li a{
 
 .testimonial-content h2{
     font-size: 22px;
-    color: #DC843C;
+    color: #D8DCAC;
 }
 
 .testimonial-content p{
