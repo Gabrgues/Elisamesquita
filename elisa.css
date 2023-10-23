@@ -1,5 +1,6 @@
 /* Estilos gerais */
 @import url('https://fonts.googleapis.com/css2?family=Onest&family=Playpen+Sans:wght@500&family=Quicksand:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
 body{
     margin: auto;
     padding: 0;
@@ -10,6 +11,7 @@ body{
 span{
     color: #D8DCAC;
 }
+
 .logo-top{
     display: flex;
     justify-content: center;
@@ -273,4 +275,110 @@ footer{
 }
 footer h1{
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .navbar-left ul {
+        text-align: center;
+    }
+
+    .navbar-left a {
+        margin: 10px 0;
+    }
+
+    .navbar-right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parallax {
+        height: auto;
+        background-attachment: scroll;
+    }
+
+    .title-1 {
+        font-size: 2rem;
+    }
+
+    .subtitle-1 {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .background-gray {
+        border-top: 6px #333;
+        padding: 20px 10px;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .content-two {
+        max-width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .content-boxes {
+        flex-direction: column;
+    }
+
+    .content-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .testimonial-h1 {
+        font-size: 1.5rem;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .testimonial-image img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .testimonial-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-content p {
+        font-size: 1rem;
+    }
 }
