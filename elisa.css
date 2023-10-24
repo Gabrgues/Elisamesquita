@@ -1,18 +1,19 @@
-/* Estilos gerais */
 @import url('https://fonts.googleapis.com/css2?family=Onest&family=Playpen+Sans:wght@500&family=Quicksand:wght@300&family=Roboto+Mono:wght@300&display=swap');
 
 body{
     margin: auto;
     padding: 0;
-    background-color: whitesmoke;
-    font-family: 'PlayPen Sans';
+    background-color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
 }
 
 span{
     color: #D8DCAC;
 }
-h1{
+h1, h2{
     color: #4C543C;
+    font-size: 3rem;
 }
 .logo-top{
     display: flex;
@@ -20,16 +21,15 @@ h1{
 }
 .logo-img{
     width: 100%; 
-    max-width: 250px; 
-    margin: 10px 0 8px;
+    max-width: 450px; 
 }
-.menu-button {
+.menu-button{
     display: none;
     cursor: pointer;
     padding: 10px;
 }
 
-.bar {
+.bar{
     width: 25px;
     height: 3px;
     background-color: #333;
@@ -54,7 +54,7 @@ h1{
         position: absolute;
         top: 0px;
         left: 0;
-        width: 100%;
+        width: 150px;
         text-align: center;
         z-index: 1;
     }
@@ -78,8 +78,8 @@ h1{
 .navbar{
     display: flex;
     justify-content: center;
-    height: 30%;
-    padding: 20px 30px;
+    padding: 0 0 5px;
+    font-size: 22px;
 }
 
 .navbar-left ul{
@@ -202,14 +202,8 @@ ul li a{
     padding: 40px 0;
     min-height: auto;
     max-height: max-content;
-    font-size: 2rem;
 }
 
-.content {
-    max-width: 1000px;
-    margin: 0 auto;
-    font-size: 2rem;
-}
 .content {
     max-width: 1000px;
     margin: 0 auto;
@@ -218,7 +212,6 @@ ul li a{
 .content-two {
     max-width: 1000px;
     margin: 0 auto;
-    font-size: 2rem;
     color: #4C543C;
     text-align: center;
 }
@@ -230,23 +223,20 @@ ul li a{
 }
 
 .content-box {
-    border-radius: 5px;
-    text-align: left;
-    font-size: 18px;
-    color: #4C543C;
-    background-color:#D8DCAC;
-    width: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: solid 3px #4c543c;
+    width: 300px;
+    height: 30%;
+    background-color: rgba(76, 84, 60, 0.1);
     height: auto;
-    padding: 10px;
-    margin: 0px 12px 10px;
-    transition:  0.2s, 0.2s; 
+    color: #4c543c;
+    font-size: 22px;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
 }
-.check{
-    justify-self: center;
-}
-.testimonial-h1{
-    color: #DC843C;
-}
+
 .rounded-logo {
     border-radius: 50%;
     width: 100px;
@@ -262,11 +252,12 @@ ul li a{
 
 .testimonial-box {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+    border-radius: 10px;
+    border: solid 3px #4c543c;
     width: 300px;
-    background-color: #4C543C;
+    background-color: rgba(76, 84, 60, 0.1);
     height: auto;
-    color: #fff;
+    color: #4c543c;
     text-align: center;
     padding: 20px;
     margin: 10px;
@@ -294,11 +285,12 @@ ul li a{
 
 .testimonial-content h2{
     font-size: 22px;
-    color: #D8DCAC;
+    color: #DC843C;
 }
 
 .testimonial-content p{
     font-size: 18px;
+    text-align: justify;
     margin: 10px 0;
 }
 
@@ -332,20 +324,32 @@ ul li a{
 }
 
 footer{
+    padding: 40px 0 30px;
     background-color: #4C543C;
+    align-items: center;
     text-align: center;
-    padding: 20px 50px;
     color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-footer{
+    width: 100%; 
+    max-width: 350px;
+    display: flex;
+}
+.footer-contact{
+    float: right;
 }
 footer h1{
     color: #fff;
+    font-size: 2rem;
+    margin: 10px;
 }
-
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
         height: auto;
-        padding: 20px 10px;
+        padding: 0;
     }
 
     .navbar-left ul {
@@ -362,7 +366,7 @@ footer h1{
     }
 
     .parallax {
-        height: auto;
+        height: 60vh;
         background-attachment: scroll;
     }
 
@@ -376,7 +380,7 @@ footer h1{
 
     .about-content {
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
     }
 
     .about-text h1 {
@@ -385,8 +389,8 @@ footer h1{
 
     .about-text p {
         font-size: 1rem;
+        text-align: justify;
     }
-
     .about-image img {
         width: 100%;
         height: auto;
@@ -395,17 +399,16 @@ footer h1{
         box-shadow: none;
     }
 
-    .background-gray {
-        border-top: 6px #333;
-        padding: 20px 10px;
+    .background-gray{
+        padding: 0;
     }
 
     .content {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .content-two {
-        max-width: 100%;
+        max-width: 80%;
         font-size: 1rem;
         text-align: center;
     }
@@ -416,7 +419,7 @@ footer h1{
 
     .content-box {
         width: 100%;
-        margin: 10px 0;
+        margin: 10px;
     }
 
     .testimonial-h1 {
@@ -430,7 +433,7 @@ footer h1{
 
     .testimonial-box {
         width: 100%;
-        margin: 10px 0;
+        margin: 10px;
     }
 
     .testimonial-image img {
