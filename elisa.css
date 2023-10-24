@@ -371,11 +371,12 @@ footer h1{
     }
 
     .title-1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .subtitle-1 {
-        font-size: 1rem;
+        display: none;
+        font-size: 2rem;
     }
 
     .about-content {
@@ -415,11 +416,12 @@ footer h1{
 
     .content-boxes {
         flex-direction: column;
+        text-align: justify;
     }
 
     .content-box {
         width: 100%;
-        margin: 10px;
+        margin: 10px 10px 50px;
     }
 
     .testimonial-h1 {
@@ -447,5 +449,8 @@ footer h1{
 
     .testimonial-content p {
         font-size: 1rem;
+    }
+    footer{
+        display: grid;
     }
 }
