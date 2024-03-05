@@ -20,9 +20,7 @@ h1, h2{
     color: #4C543C;
     font-size: 3rem;
 }
-p {
-     font-family: 'Metropolis';
-}
+
 .logo-top{
     display: flex;
     justify-content: center;
