@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest&family=Playpen+Sans:wght@500&family=Quicksand:wght@300&family=Roboto+Mono:wght@300&display=swap');
 
-body{
+body {
     margin: auto;
     padding: 0;
     background-color: white;
@@ -21,7 +21,7 @@ h1, h2{
 }
 .logo-img{
     width: 100%; 
-    max-width: 450px; 
+    max-width: 300px; 
 }
 .menu-button{
     display: none;
@@ -36,50 +36,12 @@ h1, h2{
     margin: 5px 0;
 }
 
-@media (max-width: 768px) {
-    .navbar-left {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .menu-button {
-        display: block;
-    }
-
-    #navbar-menu {
-        background-color: #fff;
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        width: 150px;
-        text-align: center;
-        z-index: 1;
-    }
-
-    #navbar-menu.show {
-        display: flex;
-    }
-
-    #navbar-menu li {
-        margin: 5px 0;
-    }
-
-    .about-text p, h1{
-        text-align: center;
-    }
-    .cta-button{
-       text-align: center;
-    }
-}
-
 .navbar{
     display: flex;
     justify-content: center;
     padding: 0 0 5px;
     font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .navbar-left ul{
@@ -126,7 +88,7 @@ ul li a{
 
 }
 .title-1{
-    font-family: 'Quicksand', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: 1em sans-serif;
     color: #fff;
     font-size: 3rem;
@@ -330,7 +292,7 @@ footer{
     text-align: center;
     color: white;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 .logo-footer{
     width: 100%; 
@@ -345,43 +307,65 @@ footer h1{
     font-size: 2rem;
     margin: 10px;
 }
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        height: auto;
+@media (max-width: 768px) {
+    .navbar-left {
+        text-align: center;
         padding: 0;
+        margin: 0;
     }
 
-    .navbar-left ul {
+    .menu-button {
+        display: block;
+    }
+
+    #navbar-menu {
+        background-color: #fff;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        align-items:center;
+        text-align: center;
+        z-index: 1;
+    }
+
+    #navbar-menu.show {
+        display: flex;
+    }
+
+    #navbar-menu li {
+        margin: 5px 0;
+    }
+
+    .about-text p, h1 {
         text-align: center;
     }
 
-    .navbar-left a {
-        margin: 10px 0;
-    }
-
-    .navbar-right {
-        justify-content: center;
-        align-items: center;
+    .cta-button {
+        text-align: center;
     }
 
     .parallax {
-        height: 60vh;
-        background-attachment: scroll;
+        height: 80vh;
     }
 
     .title-1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .subtitle-1 {
-        display: none;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .about-content {
         flex-direction: column;
-        text-align: justify;
+    }
+
+    .about-text {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0 10px;
     }
 
     .about-text h1 {
@@ -390,67 +374,57 @@ footer h1{
 
     .about-text p {
         font-size: 1rem;
-        text-align: justify;
     }
+
+    .about-image {
+        text-align: center;
+    }
+
     .about-image img {
         width: 100%;
-        height: auto;
         max-width: 300px;
         border-radius: 0;
         box-shadow: none;
     }
 
-    .background-gray{
-        padding: 0;
+    .background-gray {
+        padding: 20px 0;
     }
-
-    .content {
-        max-width: 80%;
+    .content{
+        align-items: center;
+        margin: 10px;
     }
-
-    .content-two {
-        max-width: 80%;
-        font-size: 1rem;
-        text-align: center;
-    }
-
     .content-boxes {
         flex-direction: column;
-        text-align: justify;
+        align-items: center;
     }
-
     .content-box {
-        width: 100%;
-        margin: 10px 10px 50px;
+        width: 80%;
+        margin: 10px;
     }
-
-    .testimonial-h1 {
-        font-size: 1.5rem;
-    }
-
     .testimonials {
         flex-direction: column;
         align-items: center;
     }
-
-    .testimonial-box {
-        width: 100%;
+    .testimonial-box{
+        width: 80%;
         margin: 10px;
     }
-
-    .testimonial-image img {
+    .testimonial-image img{
         max-width: 80px;
         max-height: 80px;
     }
 
-    .testimonial-content h2 {
+    .testimonial-content h2{
         font-size: 1.2rem;
     }
 
-    .testimonial-content p {
+    .testimonial-content p{
         font-size: 1rem;
     }
-    footer{
+
+    footer {
         display: grid;
+        padding: 20px 0;
     }
 }
