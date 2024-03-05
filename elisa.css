@@ -141,7 +141,8 @@ ul li a{
 }
 
 .about-text p{
-    font-size: 1.5rem;
+     font-family: 'Metropolis';
+     font-size: 1.5rem;
 }
 
 .about-image {
@@ -175,7 +176,9 @@ ul li a{
     min-height: auto;
     max-height: max-content;
 }
-
+.background-gray h1{
+     font-family: 'Milanesa';
+}
 .content {
     max-width: 1000px;
     margin: 0 auto;
@@ -256,11 +259,13 @@ ul li a{
 }
 
 .testimonial-content h2{
+    font-family: 'Milanesa';
     font-size: 22px;
     color: #DC843C;
 }
 
 .testimonial-content p{
+    font-family: 'Metropolis';
     font-size: 18px;
     text-align: justify;
     margin: 10px 0;
@@ -274,6 +279,7 @@ ul li a{
     margin-top: 20px;
     border-radius: 5px;
     font-size: 1.2rem;
+    font-family: 'Milanesa';
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
@@ -313,6 +319,7 @@ footer{
     float: right;
 }
 footer h1{
+    font-family: 'Milanesa';
     color: #fff;
     font-size: 2rem;
     margin: 10px;
