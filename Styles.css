@@ -1,0 +1,449 @@
+@font-face {
+    font-family: "Milanesa";
+    src:  url(MilanesaSerif-Bold.otf);
+ }
+@font-face {
+    font-family: "Metropolis";
+    src: url(MetropolisRegular.of);
+ }
+body {
+   margin: auto;
+   padding: 0;
+   background-color: #EEE;
+   border-top: 12px #333;
+   color: #4C543C;
+   text-align: center;
+   text-size-adjust: 72px;
+   min-height: auto;
+   max-height: max-content;
+}
+
+
+span{
+   color: #D8DCAC;
+}
+h1, h2{
+   font-family: 'Milanesa';
+   color: #DC843C;
+   font-size: 3rem;
+}
+
+.parallax{ 
+   background-image: url(/Pictures/food-background1.jpg);
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 1;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 80vh;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+
+.background{
+   margin-bottom: 30px;
+}
+.title-1{
+   font-family: 'Milanesa';
+   font: 1em;
+   color: #fff;
+   font-size: 150px;
+   margin-bottom: 0;
+}
+
+.subtitle-1{
+   font-family: 'Metropolis';
+   margin-top: 4px;
+   color: #fff;
+   font-size: 100px; 
+}
+
+.content {
+   max-width: 1000px;
+   margin: 0 auto;
+   font-size: 2rem;
+}
+
+.content-boxes {
+   transition: transform 0.2s; 
+   display: flex;
+   justify-content: space-between;
+}
+
+.content-box {
+   box-shadow: 0px 0px 20px rgb(220, 132, 60, 0.3);
+   border-radius: 10px;
+   border: solid 3px #DC843C;
+   width: 300px;
+   height: 30%;
+   height: auto;
+   color: #DC843C;
+   font-size: 22px;
+   text-align: left;
+   padding: 20px;
+   margin: 10px;
+}
+
+.content-two {
+   max-width: 1000px;
+   margin:  auto;
+   color: #4C543C;
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+}
+
+.content-boxes-two {
+   transition: transform 0.2s; 
+   display: block;
+
+}
+
+.content-box-two {
+   box-shadow: 0px 0px 60px rgb(220, 132, 60, 0.3);
+   border-radius: 10px;
+   border: solid 3px #DC843C;
+   width: 980px;
+   height: auto;
+   background-color: #DC843C;
+   height: auto;
+   text-align: center;
+   color: #fff;
+   font-family: 'Milanesa';
+   font-size: 25px;
+   padding: 0px;
+   margin: 10px;
+}
+
+.content-there {
+   max-width: auto;
+   margin:  auto;
+   display: flex;
+   color: #fff;
+   flex-direction: row;
+   text-align: center;
+}
+
+.content-boxes-three {
+   transition: transform 0.2s; 
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.content-box-three {
+   box-shadow: 0px 0px 20px rgb(220, 132, 60, 0.3);
+   border-radius: 10px;
+   border: solid 3px #DC843C;
+   height: auto;
+   color: #DC843C;
+   font-size: 22px;
+   text-align: left;
+   padding: 20px;
+   margin: 10px;
+}
+.rounded-logo {
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   margin-bottom: 20px;
+}
+.testimonials {
+   width: none;
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 40px;
+}
+
+.testimonial-box {
+   box-shadow: 0px 0px 20px rgb(220, 132, 60, 0.3);
+   border-radius: 10px;
+   border: solid 3px #DC843C;
+   width: 100%;
+   background-color: rgba(76, 84, 60, 0.1);
+   height: auto;
+   color: #4c543c;
+   text-align: center;
+   padding: 20px;
+   margin: 10px;
+}
+.testimonial-box:hover{
+   transition: 0.5s, 0.5s;
+   transform: scale(1.20);
+}
+
+.testimonial-image {
+   border-radius: 50%;
+   width:100%; 
+   max-width: 400px; 
+   margin: 0 auto 10px;
+   overflow: hidden;
+}
+
+.testimonial-image img {
+   max-width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.testimonial-h1{
+   font-family: 'Milanesa';
+   text-align: center;
+   color: #DC843C;
+}
+
+.testimonial-content p{
+   font-family: 'Metropolis';
+   font-size: 18px;
+   text-align: justify;
+   margin: 10px 0;
+}
+
+.cta-button{
+   width: 150px;
+   margin: 10px 0; 
+   display: inline-block;
+   padding: 10px 20px;
+   margin-top: 20px;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   font-family: 'Milanesa';
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #fff;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   background-color: #DC843C;
+}
+
+.cta-button:hover{
+   transform: scale(1.05);
+}
+
+.terapy-content, .decision-content{
+   font-family: 'Metropolis';
+   display: flex;
+   flex-direction: row;
+   max-width: 1200px;
+   margin: 0 auto;
+   border-radius: 10px;
+   background-color: #fff;
+   height: auto;
+   font-size: 22px;
+   text-align: left;
+   padding: 20px;
+}
+
+.terapy-text{
+   flex: 1;
+   padding: 0 20px;
+   text-align: left;
+   font-size: 2rem;
+}
+
+.terapy-text h1{
+   font-family: 'Milanesa';
+   font-size: 2.5rem;
+   color: #4c543c;
+   margin-bottom: 20px;
+}
+
+.terapy-text p{
+    font-family: 'Metropolis';
+    font-size: 25px;
+}
+
+.terapy-image {
+   flex: 1;
+   text-align: center;
+}
+
+.terapy-image img {
+   max-width: 100%;
+   margin: 0; 
+   height: auto; 
+   width: 400px;
+   border-radius: 10px;
+}
+
+
+.decision-text{
+   padding: 0 20px;
+   text-align: center;
+   font-size: 2rem;
+}
+#sobre-mim{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 40px 0;
+}
+
+.about-content{
+   font-family: 'Metropolis';
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.about-text{
+   flex: 1;
+   padding: 0 20px;
+   text-align: left;
+   font-size: 2rem;
+}
+
+.about-text h1{
+   font-family: 'Milanesa';
+   font-size: 2.5rem;
+   color: #DC843C;
+   margin-bottom: 20px;
+}
+
+.about-text p{
+    font-family: 'Metropolis';
+    font-size: 1.5rem;
+}
+
+.about-image {
+   flex: 1;
+   text-align: center;
+}
+
+.about-image img {
+   max-width: 100%;
+   margin: 0; 
+   height: auto; 
+   width: 800px;
+}
+
+.footer-svg{
+   display: inline;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   width: 30px; 
+   height: 30px; 
+   margin: 8px;
+}
+
+footer{
+   padding: 40px 0 30px;
+   background-color: #4C543C;
+   align-items: center;
+   text-align: center;
+   color: white;
+   display: flex;
+   flex-direction: column;
+}
+.logo-footer{
+   width: 100%; 
+   max-width: 350px;
+   display: flex;
+}
+.footer-contact{
+   float: right;
+}
+footer h1{
+   font-family: 'Milanesa';
+   color: #fff;
+   font-size: 2rem;
+   margin: 10px;
+}
+@media (max-width: 768px) {
+   .about-text p, h1 {
+       text-align: center;
+   }
+
+   .cta-button {
+       text-align: center;
+   }
+
+   .parallax {
+       height: 80vh;
+   }
+
+   .title-1 {
+       font-size: 2rem;
+   }
+
+   .subtitle-1 {
+       font-size: 1rem;
+   }
+
+   .about-content {
+       flex-direction: column;
+   }
+
+   .about-text {
+       text-align: center;
+       font-size: 1.5rem;
+       padding: 0 10px;
+   }
+
+   .about-text h1 {
+       font-size: 2rem;
+   }
+
+   .about-text p {
+       font-size: 1rem;
+   }
+
+   .about-image {
+       text-align: center;
+   }
+
+   .about-image img {
+       width: 100%;
+       max-width: 300px;
+       border-radius: 0;
+       box-shadow: none;
+   }
+
+   .background-gray {
+       padding: 20px 0;
+   }
+   .content{
+       align-items: center;
+       margin: 10px;
+   }
+   .content-boxes {
+       flex-direction: column;
+       align-items: center;
+   }
+   .content-box {
+       width: 80%;
+       margin: 10px;
+   }
+   .testimonials {
+       flex-direction: column;
+       align-items: center;
+   }
+   .testimonial-box{
+       width: 80%;
+       margin: 10px;
+   }
+   .testimonial-image img{
+       max-width: 80px;
+       max-height: 80px;
+   }
+
+   .testimonial-content h2{
+       font-size: 1.2rem;
+   }
+
+   .testimonial-content p{
+       font-size: 1rem;
+   }
+
+   footer {
+       display: grid;
+       padding: 20px 0;
+   }
+}
